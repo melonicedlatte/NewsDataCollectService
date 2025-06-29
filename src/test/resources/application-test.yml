@@ -1,0 +1,39 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE;MODE=MySQL
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: 
+  h2:
+    console:
+      enabled: true
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.H2Dialect
+  sql:
+    init:
+      mode: always
+      schema-locations: classpath:schema-test.sql
+      data-locations: classpath:data-test.sql
+
+logging:
+  level:
+    com.melllon.newsdatacollectservice: DEBUG
+    org.springframework.security: DEBUG
+
+# 테스트 환경에서는 셀레니움 크롤링을 비활성화
+selenium:
+  enabled: false
+
+# 테스트 환경에서는 스케줄러를 비활성화
+scheduler:
+  enabled: false
+
+# 테스트 환경에서는 크롤링을 비활성화
+crawling:
+  enabled: false 
