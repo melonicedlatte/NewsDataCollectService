@@ -164,6 +164,25 @@ src/main/java/com/melllon/newsdatacollectservice/
 - `news_sites`: 뉴스 사이트 정보
 - `news_articles`: 수집된 뉴스 기사
 
+## 크롤링 후 DB 상태 
+
+애플리케이션 실행 후 뉴스 크롤링이 완료되면 다음과 같은 데이터베이스 상태를 확인할 수 있습니다.
+
+### 1. 사용자 테이블 (users)
+![사용자 테이블](./src/main/resources/static/image/image1.png)
+
+### 2. 키워드 테이블 (keywords)
+![키워드 테이블](./src/main/resources/static/image/image2.png)
+
+### 3. 뉴스 사이트 테이블 (news_sites)
+![뉴스 사이트 테이블](./src/main/resources/static/image/image3.png)
+
+### 4. 뉴스 기사 테이블 (news_articles) - 전체 조회
+![뉴스 기사 테이블 전체](./src/main/resources/static/image/image4.png)
+
+### 5. 뉴스 기사 테이블 (news_articles) - 상세 조회
+![뉴스 기사 테이블 상세](./src/main/resources/static/image/image5.png)
+
 ## 스케줄링
 
 - **기본 설정**: 매일 오전 9시 자동 뉴스 수집
