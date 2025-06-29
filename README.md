@@ -50,7 +50,8 @@ cd NewsDataCollectService
 
 #### 방법 2: JAR 파일로 빌드 후 실행
 
-이미 첨부된 파일을 사용하여 JAR 파일 실행 가능
+* 이미 첨부된 jar 파일을 사용하여 JAR 파일 실행 가능
+  * (0.0.1 version release)[https://github.com/melonicedlatte/NewsDataCollectService/releases/tag/0.0.1] 버전 다운로드 링크
 
 ##### JAR 파일 실행
 ```bash
